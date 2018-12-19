@@ -1,13 +1,14 @@
-# apache-hive-1.2.1-bin 安装
+# apache-hive-2.3.4-bin 安装
 
 ## 更多资源:https://github.com/opensourceteams
 
 ## 技能标签
 - 下载apache hive 安装包
-- 进行apache-hive-1.2.1-bin.tar.gz安装
+- 进行apache-hive-2.3.4-bin.tar.gz安装
 - 配置mysql存储元数据
 - 配置HDFS存储 /user/hive/warehouse
-- 该Hive版本1.2.1默认集成在(Spark1.6 到 Spark2.4)
+- 该Hive版本2.3.4默认集成在(Spark1.6 到 Spark2.4)
+
 
 ## 下载
 - 下载安装包apache-hive-1.2.1-bin.tar.gz: https://archive.apache.org/dist/hive/hive-1.2.1
@@ -20,13 +21,13 @@
 ### 解压安装包
 
 ```
-tar -zxvf apache-hive-1.2.1-bin.tar.gz -C /opt/module/bigdata/
+tar -zxvf apache-hive-2.3.4-bin.tar.gz -C /opt/module/bigdata/
 ```
 
 ### 配置环境变量
 
 ```
-export HIVE_HOME=/opt/module/bigdata/apache-hive-1.2.1-bin
+export HIVE_HOME=/opt/module/bigdata/apache-hive-2.3.4-bin
 export PATH=$HIVE_HOME/lib:#PATH
 
 ```
@@ -157,8 +158,8 @@ cp mysql-connector-java-8.0.13.jar  $HIVE_HOME/lib/
 
 
 HADOOP_HOME=/opt/module/bigdata/hadoop-2.9.2
-export HIVE_CONF_DIR=/opt/module/bigdata/apache-hive-1.2.1-bin/conf
-export HIVE_AUX_JARS_PATH=/opt/module/bigdata/apache-hive-1.2.1-bin/lib
+export HIVE_CONF_DIR=/opt/module/bigdata/apache-hive-2.3.4-bin/conf
+export HIVE_AUX_JARS_PATH=/opt/module/bigdata/apache-hive-2.3.4-bin/lib
 
 ```
 
@@ -177,7 +178,7 @@ hive
 ```
 - hive启动说明
 
-![](https://github.com/opensourceteams/apache-hive-1.2.1-bin/blob/master/md/images/hive.png)
+![](https://github.com/opensourceteams/apache-hive-2.3.4-bin/blob/master/md/images/hive.png)
 
 
 
@@ -189,7 +190,7 @@ hive
 hive --service metastore & 
 ```
 
-![](https://github.com/opensourceteams/apache-hive-1.2.1-bin/blob/master/md/images/netstat.jpg)
+![](https://github.com/opensourceteams/apache-hive-2.3.4-bin/blob/master/md/images/netstat.jpg)
 
 
 
